@@ -42,6 +42,14 @@ portfolio-optimization/
 
 GitHub Actions runs automated tests on every push and pull request to `main` via [.github/workflows/unittests.yml](.github/workflows/unittests.yml).
 
+## Package Usage
+
+You can use the reusable helpers in `src/` directly from Python:
+
+```python
+from src.analysis import enrich_time_series, compute_risk_metrics
+```
+
 ## Notes
 
 - The data loader centralizes fetching, saving, and loading of processed financial data.
