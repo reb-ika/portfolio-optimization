@@ -13,3 +13,4 @@ PyPortfolioOpt
 jupyter
 ipykernel
 python-dotenv
+pytest
