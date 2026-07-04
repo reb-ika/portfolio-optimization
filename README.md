@@ -17,3 +17,33 @@ GMF Investments is a financial advisory firm specializing in personalized, data-
 Data period: **January 1, 2015 – June 30, 2026**, sourced via the [yfinance](https://pypi.org/project/yfinance/) API.
 
 ## Project Structure
+
+```text
+portfolio-optimization/
+├── data/
+│   └── processed/
+├── notebooks/
+├── scripts/
+├── src/
+│   ├── data_loader.py
+│   └── analysis.py
+├── tests/
+└── .github/workflows/
+```
+
+## Development Workflow
+
+1. Create and activate a virtual environment.
+2. Install dependencies with `pip install -r requirements.txt`.
+3. Run the test suite with `pytest tests/ -v`.
+4. Use the notebooks for exploratory analysis and the reusable modules in `src/` for production-style logic.
+
+## CI
+
+GitHub Actions runs automated tests on every push and pull request to `main` via [.github/workflows/unittests.yml](.github/workflows/unittests.yml).
+
+## Notes
+
+- The data loader centralizes fetching, saving, and loading of processed financial data.
+- The analysis module provides reusable helpers for returning metrics and rolling statistics so notebook logic is easier to test.
+- The notebooks remain the main place for visualization and experimentation, while core logic is moved into reusable Python modules when possible.
