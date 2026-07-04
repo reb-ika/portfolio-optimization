@@ -1,0 +1,15 @@
+yfinance
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+pmdarima
+scikit-learn
+torch
+torchvision
+torchaudio
+PyPortfolioOpt
+jupyter
+ipykernel
+python-dotenv
